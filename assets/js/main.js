@@ -5,20 +5,26 @@ jQuery(document).ready(function($) {
     
     $('.level-bar-inner').css('width', '0');
     
-    $(window).on('load', function() {
+    function onpageload() {
 
-        $('.level-bar-inner').each(function() {
-        
-            var itemWidth = $(this).data('level');
-            
-            $(this).animate({
-                width: itemWidth
-            }, 800);
-            
-        });
+            $('.level-bar-inner').each(function() {
 
-    });
+                    var itemWidth = $(this).data('level');
+
+                    $(this).animate({
+                            width: itemWidth
+                    }, 800);
+
+            });
+
+    }; 
     
+    if(document.readyState === 'complete'){
+        onpageload();
+    }else{
+    	$(window).on('load', onpageload);
+    }
+
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
     
