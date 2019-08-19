@@ -11,7 +11,7 @@ function StateMachine(options){
         
         function handleError(exception){
             if(debugMode){
-                console.error("StateMachine "+statemachineName+": exception caught in state "+currState.getName()+": "+exception);                
+                console.error("jabche (debug) "+statemachineName+": exception caught in state "+currState.getName()+": "+exception);                
             }
                       
             var errorHandler = currState.getHandler('error');
@@ -26,7 +26,7 @@ function StateMachine(options){
                 setCurrentState(failureState);
                 
                 if(debugMode){
-                    console.error('StateMachine '+statemachineName+': current state is '+failureState.getName());                
+                    console.error('jabche (debug): '+statemachineName+': current state is '+failureState.getName());                
                 }
             }else{
                 throw exception;                
@@ -69,7 +69,7 @@ function StateMachine(options){
                     if(nextState){
                         setCurrentState(nextState);
                         if(debugMode){
-                            console.debug('StateMachine '+statemachineName+': current state is '+nextState.getName());                
+                            console.debug('jabche (debug): '+statemachineName+': current state is '+nextState.getName());                
                         }
                     }
                     
@@ -183,7 +183,7 @@ function StateMachine(options){
             if(isInitialState){
                 setCurrentState(state);
                 if(debugMode){
-                    console.debug('StateMachine '+statemachineName+': initial state is set to '+state.getName());                
+                    console.debug('jabche (debug): '+statemachineName+': initial state is set to '+state.getName());                
                 }
             }
         }
@@ -298,3 +298,5 @@ function StateMachine(options){
     parse(options);
     return eventHandlers.getInterface();
 }
+
+exports.StateMachine = StateMachine;

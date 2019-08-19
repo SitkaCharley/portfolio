@@ -7,5 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "soulmate.seeker",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SitkaCharley/jabche.git"
+  },
+  "keywords": [
+    "simple",
+    "hierarchical",
+    "state",
+    "machine",
+    "fsm",
+    "hfsm"
+  ],
+  "bugs": {
+    "url": "https://github.com/SitkaCharley/jabche/issues"
+  },
+  "homepage": "https://github.com/SitkaCharley/jabche#readme"
 }
