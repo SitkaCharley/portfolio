@@ -66,7 +66,7 @@ jQuery(document).ready(function($) {
     );
     
     /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    new GitHubCalendar("#github-graph", "SitkaCharley");
+    //new GitHubCalendar("#github-graph", "SitkaCharley");
 
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
     GitHubActivity.feed({ selector: "#ghfeed" , username: "SitkaCharley"});
