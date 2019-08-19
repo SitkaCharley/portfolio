@@ -299,4 +299,6 @@ function StateMachine(options){
     return eventHandlers.getInterface();
 }
 
-exports.StateMachine = StateMachine;
+if(module){
+    module.exports.StateMachine = StateMachine;
+}
