@@ -25,6 +25,9 @@ jQuery(document).ready(function($) {
     	$(window).on('load', onpageload);
     }
 
+    var image = document.getElementsByClassName('profile-image');
+    image[0].className += ' rotate';
+
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
     
@@ -71,5 +74,10 @@ jQuery(document).ready(function($) {
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
     GitHubActivity.feed({ selector: "#ghfeed" , username: "SitkaCharley"});
 
-
+    var cover = document.getElementsByClassName('cover')[0];
+    setTimeout(function(){
+        cover.className = '';        
+    }, 300);
+    
+    cover.className += ' fade-in';
 });
