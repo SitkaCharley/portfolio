@@ -153,17 +153,29 @@ body div.fade-in {
 }
 
 .rotate {
-    transform: rotate( 360deg );
-    transition: transform 1s ease;    
+    transform: scale(1) rotate( 720deg );
+    -webkit-transform: scale(1) rotate( 720deg );
+    -ms-transform: scale(1) rotate( 720deg );
+    transition: transform 2s ease;
+}
+
+.minimize {
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
 }
 
 .pivoting-hover {
     transform: rotate( -360deg );
+    -webkit-transform: rotate( -360deg );
+    -ms-transform: rotate( -360deg );
     transition: transform 1s ease;
 }
 
 .pivoting-hover:hover {
-    transform: rotate( 360deg ) scale( 1.1, 1.1 );
+    transform: rotate( 360deg ) scale( 1.1 );
+    -webkit-transform: rotate( 360deg ) scale( 1.1 );
+    -ms-transform: rotate( 360deg ) scale( 1.1 );
     transition: transform 1s ease;
 }
 

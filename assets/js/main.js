@@ -26,7 +26,8 @@ jQuery(document).ready(function($) {
     }
 
     var image = document.getElementsByClassName('profile-image');
-    image[0].className += ' rotate';
+    image[0].classList.remove('minimize');
+    image[0].classList.add('rotate');
 
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
