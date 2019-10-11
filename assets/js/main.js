@@ -1,12 +1,50 @@
+function textToSpans(el){
+    var text = el.innerText;
+	var charList = Array.from(text).map(function(ch){
+		let span = document.createElement('span');
+		span.innerText = ch;
+    	return span;
+	});
+	el.innerHTML = '';
+	charList.forEach(function(char){
+		el.append(char);
+	});
+
+	return {
+		text:function(){
+			return text;
+		},
+		charList:function(){
+			return charList;
+		}
+	}
+}
+
 jQuery(document).ready(function($) {
 
 
     /*======= Skillset *=======*/
     
     $('.level-bar-inner').css('width', '0');
+
+    
+    var el = document.getElementsByClassName('name')[0];
+    var obj = textToSpans(el);
+
+    function runTextAnimations(){
+            obj.charList().forEach(function(item, idx){
+                    setTimeout(function(){
+                            item.classList.add('char-effect');
+                    }, 50*idx);
+
+                    setTimeout(function(){
+                            item.classList.remove('char-effect');
+                    }, 50*(idx+1));
+            });	
+    }
+    
     
     function onpageload() {
-
             $('.level-bar-inner').each(function() {
 
                     var itemWidth = $(this).data('level');
@@ -16,6 +54,10 @@ jQuery(document).ready(function($) {
                     }, 800);
 
             });
+//            setTimeout(function(){
+//                runTextAnimations();
+//            }, 2000)
+            
 
     }; 
     
@@ -24,10 +66,6 @@ jQuery(document).ready(function($) {
     }else{
     	$(window).on('load', onpageload);
     }
-
-    var image = document.getElementsByClassName('profile-image');
-    image[0].classList.remove('minimize');
-    image[0].classList.add('rotate');
 
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
