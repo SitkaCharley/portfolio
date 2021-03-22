@@ -1,4 +1,4 @@
-/*!   
+/*!
  * Template Name: Developer - Responsive Website Template for Developers
  * Version: 2.1
  * Author: Xiaoying Riley
@@ -136,11 +136,23 @@ body div.fade-in {
     animation-duration: 0.5s;
 }
 
+.eladdressbg:before {
+    content: "\0077\006f\0072\006b\0040\0070\0065\0074\0061\0072\002d\0074\006f\0064\006f\0072\006f\0076\002e\0063\006f\006d";
+}
+
+.eladdressbg {
+    display: inline-block;
+}
+
+#contact-me {
+  color: white;
+}
+
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
   background: #f5f5f5;
-  border-top: 10px solid #778492;
+  border-top: 10px solid #6c767d3b;
 }
 
 .header .btn {
@@ -160,13 +172,13 @@ body div.fade-in {
 }
 
 @keyframes profileimageintro {
-  from  { 
+  from  {
     opacity:0;
     transform: scale(0.1);
     -webkit-transform: scale(0.1);
     -ms-transform: scale(0.1);
   }
-  to { 
+  to {
     opacity:1;
     transform: scale(1) rotate( 720deg );
     -webkit-transform: scale(1) rotate( 720deg );
@@ -204,7 +216,7 @@ body div.fade-in {
 }
 
 #contact-me {
-    transition: transform 1s ease;    
+    transition: transform 1s ease;
     animation-name: tilt;
     animation-duration: 1s;
     animation-delay: 1.5s;
