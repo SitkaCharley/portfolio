@@ -35,16 +35,15 @@
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container clearfix">
-            <div class="profile-content float-left">
+            <div class="profile-content col-lg-8 col-12">
                 <h1 class="name">Petar Todorov</h1>
                 <h2 class="desc">Software Developer</h2>
                 <ul class="social list-inline">
                     <li class="list-inline-item pivoting-hover rotate"><a href="https://www.linkedin.com/in/petar-todorov-30901244"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item pivoting-hover rotate"><a href="https://github.com/SitkaCharley"><i class="fab fa-github-alt"></i></a></li>
                     <li class="list-inline-item pivoting-hover rotate"><a href="https://stackoverflow.com/users/1353723/0xc0deguru"><i class="fab fa-stack-overflow"></i></a></li>
                 </ul>
             </div><!--//profile-->
-            <a id='contact-me' class="btn btn-cta-primary float-right" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
+            <div class="contact-me-container"><a id='contact-me' class="btn btn-cta-primary" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a></div>
         </div><!--//container-->
     </header><!--//header-->
 
@@ -67,20 +66,28 @@
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Self-employed full stack developer with React and Java - <span class="place"><a href="https://www.galileobg.com/">GalileoBg   </a></span> <span class="year">(2019 - 2021)</span></h3>
+                                <h3 class="title">Self-employed full stack developer with React and Java - <span class="place"><a href="https://www.galileobg.com/">GalileoBg   </a></span> <span class="year">(2019 - 2023)</span></h3>
                                 <p>Develop a fleet manager - a web application that is able to observe the parameters and geolocations of a group of private motor vehicles. The user can also subscribe for specific vehicle's events and get informed through the application or email. The web application is currently running in production mode. I elaborated the whole application's software architecture and user interface. Deciding which public services and platforms to use. Implementing the back-end (Java Spring Framework) and front-end (React with JavaScript). Integrating an existing database into the server.</p>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title">Full stack developer with C++, PHP, JavaScript - <span class="place"><a href="https://egt-bg.com">Euro Games Technology Ltd   </a></span> <span class="year">(2013 - 2017)</span></h3>
+                                <h3 class="title">Self-employed full stack developer with React and NodeJs - <span class="place"><a href="https://www.weareutopia.co/">We Are Utopia Ltd   </a></span> <span class="year">(2022)</span></h3>
+                                <p>Develop an online dictionary with therms pertaining to the language of inclusion and diversity. The user can generate a PDF file of filtered terms on demand. The project also integrates some particular business logic requirements regarding the content management. It consists of several microservices. </p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Self-employed front end developer with React - <span class="place"><a href="https://www.printecgroup.com/">Printec Group  </a></span> <span class="year">(2021 - 2022)</span></h3>
+                                <p>Further developing of an existing system and user interface for interactive kiosks. The user interface was able to generate a custom defined software for the kiosks. The generated software has a simple functionality, like responding on a button clicking and going to the next page, playing videos, inserting text, displaying documents.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Software developer with C++, PHP, JavaScript - <span class="place"><a href="https://egt-bg.com">Euro Games Technology Ltd   </a></span> <span class="year">(2013 - 2017)</span></h3>
                                 <p>Develop Video Lottery Terminals (VLT) and Casino Management Systems (CMS). Write high level code for Linux based peripheral devices and server clusters. Take part in creation and implementation of a software architecture for casino video games. Develop web interface of VLT system using Yii PHP framework, Javascript and PostgreSQL and then integrate the UI to a server clusters layer with C++ and SOAP messaging protocol.</p>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title">Full-stack developer with C++, C# and JavaScript - <span class="place"><a href="http://www.rconsulting.bg/">R Consulting Ltd</a></span> <span class="year">(2012 - 2013)</span></h3>
+                                <h3 class="title">Software developer with C++, C# and JavaScript - <span class="place"><a href="http://www.rconsulting.bg/">R Consulting Ltd</a></span> <span class="year">(2012 - 2013)</span></h3>
                                 <p>Develop video-on-demand and over-the-top Linux based devices and work with media streams. Implement bin packing algorithm for sorting of images. Do a full-stack development of a monitoring service which collects data from multiple Windows servers. Create and code the software architecture for that service. Develop the user interface with HTML and JavaScript. Create a graphical visualization library with HTML5/canvas. Research and develop a life-streaming real-time chat with more than two participants using their web cameras for browsers.</p>
                             </div><!--//item-->
 
                             <div class="item">
-                                <h3 class="title">Software engineer with C/C++ - <span class="place"><a href="https://www.johnsoncontrols.com">Johnson Controls Automotive Electronics</a></span> <span class="year">(2011 - 2012)</span></h3>
+                                <h3 class="title">Software developer with C/C++ - <span class="place"><a href="https://www.johnsoncontrols.com">Johnson Controls Automotive Electronics</a></span> <span class="year">(2011 - 2012)</span></h3>
                                 <p>Develop in-car mobile phones messages accessing applications. Support desktop testing tool implemented with C++ STL and MFC. Support SQLite database API.</p>
                             </div><!--//item-->
 
@@ -92,7 +99,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
-                <section class="github section">
+                <section class="github section" style="display: none">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
                         <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
@@ -129,17 +136,9 @@
                             <div class="skillset">
 
                                 <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="More than 3 years of commersional experience."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <h3 class="level-title">Javascript<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="More than 3 years of commersional experience."><i class="fas fa-info-circle"></i>Pro</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="85%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Node.js<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Mostly non-commersial, even though rich experience on personal projects."><i class="fas fa-info-circle"></i>Experienced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
@@ -153,49 +152,9 @@
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Bootstrap<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Commercial experience with web bootstrap and non-commercial with react."><i class="fas fa-info-circle"></i>Experienced</span></h3>
+                                    <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="6 years of commercial experience."><i class="fas fa-info-circle"></i>Experienced</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="55%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Apache Cordova<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Non-commercial, even though rich experience on personal projects."><i class="fas fa-info-circle"></i>Experienced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="70%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SCSS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="More than 3 years of experience on both commercial and personal projects. Good skills on HTML5-Canvas and HTML5-WebAuio"><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">PHP<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="More than 3 years of commercial experience only with PHP 5.6"><i class="fas fa-info-circle"></i>Experienced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="70%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">MySQL/PostgreSQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="More than 3 years of commercial experience with PostgreSQL."><i class="fas fa-info-circle"></i>Experienced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="70%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="6 years of commercial experience."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
+                                        <div class="level-bar-inner" data-level="80%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
@@ -209,9 +168,41 @@
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="1 year of commercial experience."><i class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                    <h3 class="level-title">Node.js<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Mostly non-commersial, even though rich experience on personal projects."><i class="fas fa-info-circle"></i>Experienced</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="55%">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, SCSS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="More than 3 years of experience on both commercial and personal projects. Good skills on HTML5-Canvas and HTML5-WebAuio"><i class="fas fa-info-circle"></i>Experienced</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">MySQL/PostgreSQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="More than 3 years of commercial experience with PostgreSQL."><i class="fas fa-info-circle"></i>Experienced</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="70%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">PHP<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="More than 3 years of commercial experience only with PHP 5.6"><i class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="50%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="1 year of commercial experience."><i class="fas fa-info-circle"></i>Beginner</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="30%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
@@ -220,6 +211,14 @@
                                     <h3 class="level-title">Git<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="4 years of commercial experience and another 2 years of non-commercial."><i class="fas fa-info-circle"></i>Advanced</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="65%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Apache Cordova<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Non-commercial, even though rich experience on personal projects."><i class="fas fa-info-circle"></i>Beginner</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="30%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
@@ -266,7 +265,7 @@
                                 </li><!--//item-->
                                 <li class="item">
                                     <span class="title"><strong>French:</strong></span>
-                                    <span class="level">Intermediate<br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                    <span class="level">Beginner<br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
                                 </li><!--//item-->
                             </ul>
                         </div><!--//content-->
